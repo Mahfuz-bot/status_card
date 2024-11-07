@@ -42,7 +42,7 @@
    }
 
    .dashboard > div {
-      @apply flex items-center custom-scrollbar overflow-x-scroll;
+      @apply flex overflow-x-scroll custom-scrollbar;
    }
 }
 

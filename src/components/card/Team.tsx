@@ -1,9 +1,12 @@
+import { TeamMember } from "../../assets/data/dataType"
 import Img from "./Img"
 
-function Team() {
+function Team({ taskTeams }: { taskTeams: TeamMember[] }) {
    return (
       <>
-         <Img />
+         {taskTeams.map((taskTeam) => (
+            <Img key={taskTeam.avatarUrl} clientImage={taskTeam.avatarUrl} />
+         ))}
       </>
    )
 }

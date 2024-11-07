@@ -1,7 +1,7 @@
-function Img() {
+function Img({ clientImage }: { clientImage: string }) {
    return (
       <img
-         src="https://picsum.photos/200"
+         src={clientImage}
          alt="image"
          width={25}
          height={25}

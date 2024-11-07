@@ -1,10 +1,17 @@
+import { StatusColumn } from "../assets/data/dataType"
 import StatusHeader from "./status/StatusHeader"
-function Status({ children }: { children: React.ReactNode }) {
+function Status({
+   children,
+   data,
+}: {
+   children: React.ReactNode
+   data: StatusColumn
+}) {
    return (
       <section className="status">
-         <StatusHeader />
+         <StatusHeader data={data} />
          <section className="status-body">
-            <body>{children}</body>
+            <div>{children}</div>
          </section>
       </section>
    )

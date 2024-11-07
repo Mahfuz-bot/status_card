@@ -1,13 +1,13 @@
-interface Client {
+export interface Client {
    name: string;
    avatarUrl: string;
 }
 
-interface TeamMember {
+export interface TeamMember {
    avatarUrl: string;
 }
 
-interface Task {
+export interface Task {
    title: string;
    description: string;
    client: Client;
@@ -21,7 +21,8 @@ interface Task {
    team: TeamMember[];
 }
 
-interface StatusColumn {
+export interface StatusColumn {
    status: string;
    tasks: Task[];
 }
+export interface Stats { comments: number; files: number; date: string } 
