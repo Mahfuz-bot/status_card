@@ -33,6 +33,9 @@ function Stats({ taskStats }: { taskStats: StatsData }) {
       }
    }
 
+   const url =
+      import.meta.env.VITE_API_URL || "http://localhost:3000/api/upload"
+
    const handleUpload = async () => {
       if (!selectedFiles) return
 
@@ -42,15 +45,11 @@ function Stats({ taskStats }: { taskStats: StatsData }) {
       )
 
       try {
-         const response = await axios.post(
-            "http://localhost:3000/api/upload",
-            formData,
-            {
-               headers: {
-                  "Content-Type": "multipart/form-data",
-               },
-            }
-         )
+         const response = await axios.post(url, formData, {
+            headers: {
+               "Content-Type": "multipart/form-data",
+            },
+         })
          console.log("Files uploaded:", response.data.files)
          setAttachmentCount(attachmentCount + selectedFiles.length)
       } catch (error) {
