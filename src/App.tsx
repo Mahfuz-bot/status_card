@@ -5,8 +5,7 @@ import Status from "./components/Status"
 import { dataSet } from "./assets/data/dataSet"
 
 function App() {
-   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-   const [infos, setInfos] = useState(dataSet)
+   const [infos, _setInfos] = useState(dataSet)
 
    if (!infos) {
       return <div>Loading...</div>
