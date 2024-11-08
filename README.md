@@ -3,9 +3,10 @@
 -  On frontEnd run npm run dev make sure the 5173 port is running
 -  On backEnd run npm run dev make sure the 3000 port is running
 
-# Extra & Project live link
+##  CLICK link text to continue on live project [LINK](https://status-card-coral.vercel.app/)
 
-##  CLICK link text to continue [LINK](https://status-card-coral.vercel.app/)
+# Extra
+
 -  MadeUp data is on assets folder exported by dataSet
 
 # Task for Frontend Developer
